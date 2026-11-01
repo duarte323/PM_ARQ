@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Pedro Marques — Arquiteto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cursor Personalizado (Apenas Desktop) -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Barra de Navegação Fixa -->
+    <header class="navbar" id="navbar">
+        <a href="#inicio" class="logo">
+            PM<span>.ARQ</span>
+        </a>
+
+        <nav class="nav-desktop">
+            <a href="#sobre" class="nav-link">Sobre mim</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#servicos" class="nav-link">Serviços</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#contactos" class="nav-cta">Contactos</a>
+        </nav>
+
+        <div class="nav-mobile-actions">
+            <a href="#contactos" class="nav-mobile-cta">Contactar</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Fullscreen Overlay -->
+    <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+        <div class="menu-inner">
+            <ul class="menu-list">
+                <li><a href="#inicio" class="menu-item" data-num="01">Início</a></li>
+                <li><a href="#sobre" class="menu-item" data-num="02">Sobre mim</a></li>
+                <li><a href="#projetos" class="menu-item" data-num="03">Projetos</a></li>
+                <li><a href="#servicos" class="menu-item" data-num="04">Serviços</a></li>
+                <li><a href="#faq" class="menu-item" data-num="05">FAQ</a></li>
+                <li><a href="#contactos" class="menu-item" data-num="06">Contactos</a></li>
+            </ul>
+            <div class="menu-footer">
+                <p>Vila Nova de Gaia, Portugal</p>
+                <div class="menu-socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+                    <a href="https://wa.me/351919396432" target="_blank" rel="noopener">WhatsApp ↗</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Secção Hero -->
+        <section class="hero" id="inicio">
+            <div class="container hero-container">
+                <div class="hero-tag reveal">#AARTEDEQUEBRARAARTE</div>
+                <h1 class="hero-title reveal">
+                    PEDRO MARQUES <span class="accent-stroke">ARQUITETO</span>
+                </h1>
+                <div class="hero-bottom reveal">
+                    <p class="hero-subtitle">
+                        Arquitetura como resposta ao lugar, às pessoas e à forma de habitar.
+                    </p>
+                    <a href="#projetos" class="btn-primary">
+                        <span>Explorar Projetos</span>
+                        <span class="arrow">↓</span>
+                    </a>
+                </div>
+            </div>
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>ARQUITETURA • URBANISMO • DESIGN DE INTERIORES • MODELAÇÃO 3D • REABILITAÇÃO • </span>
+                    <span>ARQUITETURA • URBANISMO • DESIGN DE INTERIORES • MODELAÇÃO 3D • REABILITAÇÃO • </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Sobre Mim -->
+        <section class="about section-padding" id="sobre">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">/ QUEM É PEDRO MARQUES?</span>
+                    <h2 class="section-title">Arquitetura com visão integrada e identidade própria.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            Pedro Marques formou-se em arquitetura na <strong>Universidade Lusíada do Porto em
+                                1995</strong>, estabelecendo-se em atelier próprio em 2006, após ter colaborado durante
+                            dez anos com o gabinete de arquitetura Victor Martins SA.
+                        </p>
+                        <p>
+                            Ao longo dos anos, desenvolveu um trabalho diversificado no âmbito da arquitetura, urbanismo
+                            e design. Conta com o apoio de especialistas de diversas áreas e com ampla experiência, de
+                            forma a introduzir nos seus projetos uma visão integrada das diferentes vertentes e etapas,
+                            garantindo ao mesmo tempo a sua máxima qualidade.
+                        </p>
+                        <a href="#contactos" class="link-underline">Conheça o meu percurso ↗</a>
+                    </div>
+
+                    <div class="stats-grid reveal">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="1995">0</span>
+                            <span class="stat-label">Formação em arquitetura</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="2006">0</span>
+                            <span class="stat-label">Fundação do atelier</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-plus">+<span class="stat-number" data-target="30">0</span></div>
+                            <span class="stat-label">Anos de experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Projetos -->
+        <section class="projects section-padding" id="projetos">
+            <div class="container">
+                <div class="section-header flex-between reveal">
+                    <div>
+                        <span class="section-tag">/ PROJETOS</span>
+                        <h2 class="section-title">Trabalhos residenciais selecionados</h2>
+                    </div>
+
+                    <!-- Botões de Filtro por Categoria -->
+                    <div class="project-filters" role="tablist" aria-label="Filtrar projetos por categoria">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="residencial">Residencial</button>
+                        <button class="filter-btn" data-filter="habitacao">Habitação</button>
+                        <button class="filter-btn" data-filter="moradia">Moradia</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <article class="project-card reveal" data-project="aa-brito" data-category="residencial">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                                alt="Projeto AA Brito" loading="lazy">
+                            <span class="project-badge">Residencial</span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>AA Brito</h3>
+                                <span class="project-tap-hint">Ver galeria e detalhes</span>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-project="alex-porto" data-category="habitacao">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80"
+                                alt="Projeto Alex Porto" loading="lazy">
+                            <span class="project-badge">Habitação</span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Alex Porto</h3>
+                                <span class="project-tap-hint">Ver galeria e detalhes</span>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-project="propiso-canidelo"
+                        data-category="residencial habitacao">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80"
+                                alt="Projeto Propiso Canidelo" loading="lazy">
+                            <span class="project-badge">Residencial</span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Propiso Canidelo</h3>
+                                <span class="project-tap-hint">Ver galeria e detalhes</span>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-project="canidelo" data-category="moradia">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80"
+                                alt="Projeto Canidelo" loading="lazy">
+                            <span class="project-badge">Moradia</span>
+                        </div>
+                        <div class="project-info">
+                            <div>
+                                <h3>Canidelo</h3>
+                                <span class="project-tap-hint">Ver galeria e detalhes</span>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Serviços -->
+        <section class="services section-padding" id="servicos">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">/ SERVIÇOS</span>
+                    <h2 class="section-title">Da ideia ao espaço</h2>
+                </div>
+
+                <div class="services-list">
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">01</span>
+                            <h3 class="service-name">Estudo e Conceito</h3>
+                        </div>
+                        <p class="service-desc">Análise do espaço, levantamento, programa, referências e primeiras
+                            ideias.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">02</span>
+                            <h3 class="service-name">Arquitetura</h3>
+                        </div>
+                        <p class="service-desc">Desenvolvimento da proposta arquitetónica, plantas, cortes, alçados e
+                            definição espacial.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">03</span>
+                            <h3 class="service-name">Projeto & Detalhe</h3>
+                        </div>
+                        <p class="service-desc">Materiais, soluções construtivas, pormenorização e informação necessária
+                            à execução.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">04</span>
+                            <h3 class="service-name">3D & Imagem</h3>
+                        </div>
+                        <p class="service-desc">Modelação tridimensional, imagens fotorrealistas e apoio à comunicação
+                            visual do projeto.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">05</span>
+                            <h3 class="service-name">Interiores</h3>
+                        </div>
+                        <p class="service-desc">Materiais, iluminação, mobiliário, equipamentos e composição dos espaços
+                            interiores.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">06</span>
+                            <h3 class="service-name">Acompanhamento</h3>
+                        </div>
+                        <p class="service-desc">Apoio durante a concretização do projeto e articulação das decisões
+                            necessárias em obra.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">07</span>
+                            <h3 class="service-name">Recuperações</h3>
+                        </div>
+                        <p class="service-desc">Valorização de edifícios existentes, preservando a sua identidade e
+                            adaptando-os às necessidades atuais.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+
+                    <div class="service-item reveal">
+                        <div class="service-top">
+                            <span class="service-num">08</span>
+                            <h3 class="service-name">Remodelações</h3>
+                        </div>
+                        <p class="service-desc">Reorganização e renovação de espaços, melhorando a funcionalidade, o
+                            conforto e a imagem.</p>
+                        <a href="#contactos" class="service-more">Saber mais ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção FAQ -->
+        <section class="faq section-padding" id="faq">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">/ DÚVIDAS FREQUENTES</span>
+                    <h2 class="section-title">FAQ</h2>
+                </div>
+
+                <div class="faq-accordion reveal">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como funciona a primeira reunião para apresentar uma ideia?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Analisamos o local, ouvimos as suas necessidades, objetivos e orçamento disponível,
+                                definindo um programa preliminar e as etapas seguintes do projeto.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>O atelier assegura as especialidades e o licenciamento camarário?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim. Trabalhamos em conjunto com especialistas de diversas áreas de engenharia para
+                                entregar uma solução chave-na-mão durante o licenciamento e a execução.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Realizam acompanhamento presencial durante a fase de obra?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, o acompanhamento em obra garante que o rigor do projeto de execução, os materiais
+                                escolhidos e os pormenores construtivos são cumpridos fielmente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção Contactos -->
+        <section class="contact section-padding" id="contactos">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <span class="section-tag">/ CONTACTOS</span>
+                        <h2 class="section-title">Não sabe por onde começar? Apresente-nos a sua ideia.</h2>
+
+                        <div class="info-blocks">
+                            <div class="info-item">
+                                <span class="info-label">Telefone</span>
+                                <a href="tel:+351919396432">+351 919 396 432</a>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">E-mail</span>
+                                <a href="mailto:mfmarques.pedro@gmail.com">mfmarques.pedro@gmail.com</a>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Atelier</span>
+                                <p>Vila Nova de Gaia, Portugal</p>
+                            </div>
+                        </div>
+
+                        <div class="social-pills">
+                            <a href="https://wa.me/351919396432" target="_blank" rel="noopener" class="pill">WhatsApp
+                                ↗</a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener" class="pill">Instagram ↗</a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal" id="contact-form">
+                        <h3>Envie-nos uma mensagem</h3>
+                        <div class="input-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="O seu nome" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="O seu e-mail" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4"
+                                placeholder="Fale-nos sobre o seu projeto..." required></textarea>
+                        </div>
+                        <label class="checkbox-group">
+                            <input type="checkbox" required>
+                            <span>Concordo com a política de privacidade.</span>
+                        </label>
+                        <button type="submit" class="btn-submit">Enviar mensagem ↗</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>PEDRO MARQUES</h2>
+                    <p>#AARTEDEQUEBRARAARTE</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contactos">Contactos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links úteis</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade e Cookies</a></li>
+                        <li><a href="#">Livro de Reclamações Eletrónico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contactos</h4>
+                    <p>Tel: +351 919 396 432</p>
+                    <p>Email: mfmarques.pedro@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Pedro Marques Arquiteto. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Detalhes do Projeto -->
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+
+        <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-top-bar">
+                <span class="modal-swipe-indicator"></span>
+                <button class="modal-close" id="modal-close" aria-label="Fechar projeto">
+                    <span>Fechar</span>
+                    <span class="close-icon">✕</span>
+                </button>
+            </div>
+
+            <div class="modal-grid">
+                <!-- Coluna da Galeria -->
+                <div class="modal-gallery">
+                    <div class="modal-main-image" id="modal-swipe-area">
+                        <button class="gallery-nav prev" id="gallery-prev" aria-label="Imagem anterior">←</button>
+                        <img id="modal-img" src="" alt="Imagem do projeto">
+                        <button class="gallery-nav next" id="gallery-next" aria-label="Próxima imagem">→</button>
+                        <div class="gallery-counter" id="gallery-counter">1 / 4</div>
+                    </div>
+                    <div class="modal-thumbnails" id="modal-thumbnails"></div>
+                </div>
+
+                <!-- Coluna da Descrição -->
+                <div class="modal-details">
+                    <span class="modal-badge" id="modal-category">Categoria</span>
+                    <h2 class="modal-title" id="modal-title">Nome do Projeto</h2>
+
+                    <div class="modal-meta">
+                        <div class="meta-box">
+                            <span class="meta-label">Localização</span>
+                            <strong id="modal-location">-</strong>
+                        </div>
+                        <div class="meta-box">
+                            <span class="meta-label">Tipologia</span>
+                            <strong id="modal-type">-</strong>
+                        </div>
+                        <div class="meta-box">
+                            <span class="meta-label">Estado</span>
+                            <strong id="modal-status">-</strong>
+                        </div>
+                    </div>
+
+                    <div class="modal-description" id="modal-description"></div>
+
+                    <a href="#contactos" class="btn-primary modal-cta" id="modal-cta">
+                        <span>Pedir informações sobre este projeto</span>
+                        <span class="arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
